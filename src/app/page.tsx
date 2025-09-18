@@ -10,18 +10,24 @@ import {
   onSnapshot,
 } from "firebase/firestore";
 
-// ✅ Your Firebase config
 const firebaseConfig = {
-  apiKey: "AIzaSyBlDsjqlDfWCP32yGt8OmbO4g5wtxXv2dg",
-  authDomain: "ztype-leaderboard-backend.firebaseapp.com",
-  projectId: "ztype-leaderboard-backend",
-  storageBucket: "ztype-leaderboard-backend.appspot.com",
-  messagingSenderId: "667807a302055",
-  appId: "1:667807302055:web:7406a22685c5c54f3db682",
-  measurementId: "G-3PBFQTC2V1",
+
+  apiKey: "AIzaSyDdlB2tEp3IPKHi0omoNSYRR720ycEOET8",
+
+  authDomain: "leaderboard-6a7a6.firebaseapp.com",
+
+  projectId: "leaderboard-6a7a6",
+
+  storageBucket: "leaderboard-6a7a6.firebasestorage.app",
+
+  messagingSenderId: "329400579144",
+
+  appId: "1:329400579144:web:0cde884ea0abfcc617147d",
+
+  measurementId: "G-3Y5QLDEFGQ"
+
 };
 
-// ✅ Initialize Firebase only once
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
